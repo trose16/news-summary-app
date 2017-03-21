@@ -8,7 +8,6 @@
     return this.headline;
   }
 
-
   exports.Article = Article;
 
 
