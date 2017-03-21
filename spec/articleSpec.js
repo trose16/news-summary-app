@@ -1,11 +1,14 @@
 (function testArticleHasHeadline() {
-  var article = new Article();
+  var headline = "Wheels on the bus stop going around!"
+  var article = new Article(headline);
+  console.log( "testArticleHasHeadline returned " + article )
   assert.isTrue(article.headline !== undefined);
 })();
 
 
-(function getHeadline() {
+(function testGetHeadline() {
   var headline = "Wheels on the bus stop going around!"
   var article = new Article(headline);
-  assert.isTrue(article.getHeadline === headline);
+  console.log( "testGetHeadline returned " + article )
+  assert.isTrue( article.getHeadline() === headline );
 })();
