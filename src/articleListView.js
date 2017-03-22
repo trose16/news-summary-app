@@ -5,7 +5,7 @@
   };
 
   ArticleListView.prototype.convertToHTML = function() {
-    var array = this.articleList._list;
+    var array = this.articleList._articles;
     var html = "<ul>";
     for (var i = 0; i < array.length; i++) {
       html += `<li><div>${ array[i].headline}</div></li>`;
